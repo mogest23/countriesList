@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- We could add the flag images here using COIL svg if we want.
+    But I am trying to follow the mock design provided in the document.
+    I hope that's understood. -->
+
+    <!-- Put Country name and region together on the first line, left-aligned -->
+    <TextView
+        android:id="@+id/countryAndRegionTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/countryCodeTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/united_states_of_america_na" />
+
+    <!-- Country code - right-aligned -->
+    <TextView
+        android:id="@+id/countryCodeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/us"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/countryAndRegionTv"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Capital on the next line, left-aligned -->
+    <TextView
+        android:id="@+id/capitalCityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capital"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryAndRegionTv"
+        tools:text="@string/washington_d_c" />
+
+    <!-- Separator to ease list on the viewer's eye -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/walmart_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capitalCityTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WalmartAssessment</string>
+    <string name="retry">Retry</string>
+    <string name="us">US</string>
+    <string name="capital">Capital</string>
+    <string name="washington_d_c">Washington, D.C.</string>
+    <string name="united_states_of_america_na">United States of America, NA</string>
+</resources>
