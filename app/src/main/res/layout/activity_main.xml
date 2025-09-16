@@ -6,3 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" />
+
+    <!--I've kept the UI design as simple as possible as per the mock on the document
+     based on the assumption that the UI mock was given for a reason and I focused more on
+      my code overall. I can make the design more interactive and engaging if needed. -->
