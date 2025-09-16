@@ -2,12 +2,9 @@ package com.moges.countrieslist.presentation.views
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import com.moges.countrieslist.R
 import com.moges.countrieslist.databinding.CountryTileBinding
 import com.moges.countrieslist.models.Country
 
