@@ -40,6 +40,11 @@ class CountriesFragment : Fragment(R.layout.fragment_countries) {
     ): View? {
         _binding = FragmentCountriesBinding.inflate(inflater, container, false)
         val view = binding.root
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         val recycledView = binding.recyclerView
         recycledView.adapter = adapter
@@ -75,8 +80,6 @@ class CountriesFragment : Fragment(R.layout.fragment_countries) {
 
             }
         }
-
-        return view
     }
 
     override fun onDestroyView() {
